@@ -1,4 +1,4 @@
-#include "Heap.h"
+﻿#include "Heap.h"
 #include <random>
 
 bool search(int* arr,int length,int x) {
@@ -13,13 +13,13 @@ bool search(int* arr,int length,int x) {
 }
 
 int main() {
-    const int n = 300; // current_size of the array
+    const int n = 300; // current size of the array
     int A1[n]; // Array to hold random numbers
 
     // Step 1: Building an array containing 300 random numbers
     srand((time(0)));
     for (int i = 0; i < n; i++) {
-        int random = rand() % 1000 + 1; // Generate random numbers between 0 and 999
+        int random = rand() % 1000 + 1; // Generate random numbers between 1 and 1000
         while (search(A1, n, random)) { // make distinct values
             random = rand() % 1000 + 1;
         }
