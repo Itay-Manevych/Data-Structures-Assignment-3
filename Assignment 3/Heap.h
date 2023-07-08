@@ -2,7 +2,6 @@
 #include <iostream>
 using namespace std;
 
-
 // The logic of finding the K largest numbers, is
 // 1. you take the root of the heap, and insert it into an auxiliary heap, lets call it H2
 // 2. you extract it from H2, print it, and if he has children, insert them to H2 (after you insert the children you fix H2)
@@ -14,8 +13,6 @@ using namespace std;
 // Space Complexity - O(k)
 // Space Complexity Explanation:
 // Every time you insert both of the children of the maximum number to H2 (if they exist), and so, if you have k largest numbers, you cant have more than 2*k nodes.
-
-
 
 class Heap {
 public:
